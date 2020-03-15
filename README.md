@@ -1,2 +1,2 @@
 # Lab_MLGroup_Tasks
-Tasks of machine learning group
+Tasks of Machine Learning Group
