@@ -82,7 +82,7 @@ with open('ProcessedTianjinRentHouseInfo.csv', 'r', newline='') as csv_in_file:
             # 入住
             if row_list[12] == '随时入住':
                 row_list[12] = 1
-            # TODO 租期
+            # 租期
             if row_list[13] != '暂无数据':
                 if re.search(r'年', row_list[13]):
                     term = int(re.sub(r'(\D)', ' ', row_list[13]).split()[0]) * 12
