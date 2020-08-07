@@ -8,6 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import cross_val_score
 
+
 # 加载数据集
 dataset = pd.read_csv('LabeledTianjinRentHouseInfo.csv', encoding='gbk')
 
