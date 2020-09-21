@@ -36,7 +36,7 @@ W = tf.Variable(tf.zeros([784, 10]))
 b = tf.Variable(tf.zeros([10]))
 y_ = tf.placeholder(tf.float32, [None, 10])
 
-# y = softmax(x * w + b)
+# y = softmax(x * W + b)
 y = tf.nn.softmax(tf.matmul(x, W) + b)
 
 # 构建损失函数（交叉熵损失函数）
