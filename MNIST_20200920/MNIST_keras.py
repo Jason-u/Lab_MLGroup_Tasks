@@ -8,6 +8,7 @@ from keras.optimizers import RMSprop
 from keras.datasets import mnist
 # import matplotlib.pyplot as plt
 
+
 # 加载数据集
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
 # print(train_images.shape, test_images.shape)
