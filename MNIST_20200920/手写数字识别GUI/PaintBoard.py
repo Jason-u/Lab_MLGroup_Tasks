@@ -26,7 +26,7 @@ class PaintBoard(QWidget):
         self.__lastPos = QPoint(0, 0)               # 上一次鼠标位置
         self.__currentPos = QPoint(0, 0)            # 当前的鼠标位置
         self.__painter = QPainter()                 # 新建绘图工具
-        self.__thickness = 45                       # 默认画笔粗细为45px
+        self.__thickness = 35                       # 默认画笔粗细为35px
         self.__penColor = QColor("white")           # 设置默认画笔颜色为白色
         self.__colorList = QColor.colorNames()      # 获取颜色列表
 
@@ -44,7 +44,7 @@ class PaintBoard(QWidget):
         # 改变画笔颜色
         self.__penColor = QColor(color)
 
-    def ChangePenThickness(self, thickness=45):
+    def ChangePenThickness(self, thickness=35):
         # 改变画笔粗细
         self.__thickness = thickness
 

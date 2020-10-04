@@ -68,10 +68,10 @@ class MainWidget(QWidget):
         self.__spinBox_penThickness = QSpinBox(self)
         self.__spinBox_penThickness.setMaximum(45)
         self.__spinBox_penThickness.setMinimum(20)
-        self.__spinBox_penThickness.setValue(45)  # 默认粗细为45
-        self.__spinBox_penThickness.setSingleStep(1)  # 最小变化值为2
+        self.__spinBox_penThickness.setValue(35)      # 默认粗细为35
+        self.__spinBox_penThickness.setSingleStep(1)  # 最小变化值为1
         self.__spinBox_penThickness.valueChanged.connect(
-            self.on_PenThicknessChange)  # 关联spinBox值变化信号和函数on_PenThicknessChange
+            self.on_PenThicknessChange)               # 关联spinBox值变化信号和函数on_PenThicknessChange
         sub_layout.addWidget(self.__spinBox_penThickness)
         self.__label_penColor = QLabel(self)
         self.__label_penColor.setText("画笔颜色")
