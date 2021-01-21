@@ -1,0 +1,31 @@
+digraph decision_tree {
+ "26716d35-5dd0-4480-86e1-2e8cef0dd410" [label="tearRate"];
+ "3ad6100c-c014-41bf-bacd-b0b28ebda080" [label="no lenses"];
+ "7e784d36-e580-4b1c-abbc-9f3653b70264" [label="astigmatic"];
+ "0c5d1e53-6443-48b1-91ed-dfa20528c509" [label="prescript"];
+ "e6947147-dfac-42bc-a01f-ef97ef917aae" [label="age"];
+ "c51b8cbf-4182-41cf-aa3d-d0ae7116f107" [label="hard"];
+ "11ac6e3e-738a-46fc-b1b0-29bd0ae22d96" [label="no lenses"];
+ "c1a13702-804f-40be-92f1-5116e041c1e4" [label="no lenses"];
+ "b737ac17-92c9-40ab-a3af-74fb78d591ae" [label="hard"];
+ "a40fd94c-81a9-4ba2-98c5-eea817a313fe" [label="age"];
+ "8cd5e511-f598-4d79-9077-0199a559c94e" [label="soft"];
+ "6a4e5934-4c70-48e6-be01-7fb21e6c47ec" [label="soft"];
+ "51c8fa4c-48bb-4d12-b761-9afb4787b4b8" [label="prescript"];
+ "51049906-8158-4b73-9dc5-055c3d097d99" [label="soft"];
+ "4c7d93fe-ae8a-4caf-bf36-097ef5f8464a" [label="no lenses"];
+ "26716d35-5dd0-4480-86e1-2e8cef0dd410" -> "3ad6100c-c014-41bf-bacd-b0b28ebda080" [label="reduced"];
+ "26716d35-5dd0-4480-86e1-2e8cef0dd410" -> "7e784d36-e580-4b1c-abbc-9f3653b70264" [label="normal"];
+ "7e784d36-e580-4b1c-abbc-9f3653b70264" -> "0c5d1e53-6443-48b1-91ed-dfa20528c509" [label="yes"];
+ "0c5d1e53-6443-48b1-91ed-dfa20528c509" -> "e6947147-dfac-42bc-a01f-ef97ef917aae" [label="hyper"];
+ "e6947147-dfac-42bc-a01f-ef97ef917aae" -> "c51b8cbf-4182-41cf-aa3d-d0ae7116f107" [label="young"];
+ "e6947147-dfac-42bc-a01f-ef97ef917aae" -> "11ac6e3e-738a-46fc-b1b0-29bd0ae22d96" [label="pre"];
+ "e6947147-dfac-42bc-a01f-ef97ef917aae" -> "c1a13702-804f-40be-92f1-5116e041c1e4" [label="presbyopic"];
+ "0c5d1e53-6443-48b1-91ed-dfa20528c509" -> "b737ac17-92c9-40ab-a3af-74fb78d591ae" [label="myope"];
+ "7e784d36-e580-4b1c-abbc-9f3653b70264" -> "a40fd94c-81a9-4ba2-98c5-eea817a313fe" [label="no"];
+ "a40fd94c-81a9-4ba2-98c5-eea817a313fe" -> "8cd5e511-f598-4d79-9077-0199a559c94e" [label="young"];
+ "a40fd94c-81a9-4ba2-98c5-eea817a313fe" -> "6a4e5934-4c70-48e6-be01-7fb21e6c47ec" [label="pre"];
+ "a40fd94c-81a9-4ba2-98c5-eea817a313fe" -> "51c8fa4c-48bb-4d12-b761-9afb4787b4b8" [label="presbyopic"];
+ "51c8fa4c-48bb-4d12-b761-9afb4787b4b8" -> "51049906-8158-4b73-9dc5-055c3d097d99" [label="hyper"];
+ "51c8fa4c-48bb-4d12-b761-9afb4787b4b8" -> "4c7d93fe-ae8a-4caf-bf36-097ef5f8464a" [label="myope"];
+}
