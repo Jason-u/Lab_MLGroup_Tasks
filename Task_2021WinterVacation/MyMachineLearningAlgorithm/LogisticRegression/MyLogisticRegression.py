@@ -25,7 +25,23 @@ def gradAscent(data, labels):
     return weights
 
 
-def plotBestFit(w, data, labels):
+def stocGradAscent(data, labels, num_iter):
+    data_matrix = np.mat(data)
+    m, n = np.shape(data_matrix)
+    weights = np.ones((n, 1))
+    for i in range(num_iter):
+        data_index = list(range(m))
+        for j in range(m):
+            alpha = 4 / (1.0 + i + j) + 0.01
+            rand_index = int(np.random.uniform(0, len(data_index)))
+            h = sigmoid(np.sum(data_matrix[rand_index] * weights))
+            error = labels[rand_index] - h
+            weights = weights + alpha * error * data_matrix[rand_index].transpose()
+            del data_index[rand_index]
+    return weights
+
+
+def plotBestFit(w, data, labels, title):
     weights = w.getA()
     data_arr = np.array(data)
     n = np.shape(data_arr)[0]
@@ -46,5 +62,5 @@ def plotBestFit(w, data, labels):
     ax.plot(x, y)
     plt.xlabel('X1')
     plt.ylabel('X2')
-    plt.title('Logistic Regression')
+    plt.title(title)
     plt.show()
